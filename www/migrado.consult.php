@@ -14,7 +14,7 @@ if (!$conn) {
 $sql = "SELECT * FROM Reports";
 $result = mysqli_query($conn, $sql);
 
-include "header.php";
+include "App/views/header.php";
 echo "<div class='container'>";
 echo "<div class='frequently-asked-questions'>";
 echo "<h1>Perguntas Frequentes</h1>";
@@ -32,6 +32,6 @@ if (mysqli_num_rows($result) > 0) {
 // echo "<a href='/'>link text</a>";
 echo "</div>";
 echo "</div>";
-include "footer.php";
-include "style.css";
+include "App/views/footer.php";
+include "public/assets/css/style.css";
 mysqli_close($conn);

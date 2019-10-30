@@ -1,4 +1,3 @@
-
 <div class=options>
     <div class="qea-background">
         <a class=qea href='/consult.php'>
