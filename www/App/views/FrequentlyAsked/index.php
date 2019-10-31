@@ -9,10 +9,10 @@ include "../../App/views/header.php";
 echo "<div class='container'>";
 echo "<div class='frequently-asked-questions'>";
 echo "<h1>Perguntas Frequentes</h1>";
-if (mysqli_num_rows($result) > 0) {
+if (mysqli_num_rows($frequentlyAskedQuestions) > 0) {
     // output data of each row
     echo "<ul class='list-group'>";
-    while($row = mysqli_fetch_assoc($result)) {
+    while($row = mysqli_fetch_assoc($frequentlyAskedQuestions)) {
         echo "<li class='list-group-item'>"."<a href='FrequentlyAsked.php?action=show&id={$row["id"]}'>".$row["title"]."</a>"."</li>";
     }
     echo "</ul>";

@@ -1,5 +1,7 @@
 <?php
 
+include "../models/FrequentlyAsked.php";
+
 $action = $_GET["action"];
 
 switch ($action) 
@@ -14,31 +16,13 @@ switch ($action)
 
 function index()
 {
-    // Create connection
-    $conn = mysqli_connect("db", "root", "phprs", "myDB");
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    $sql = "SELECT * FROM FrequentlyAskeds";
-    $result = mysqli_query($conn, $sql);
-
+    $frequentlyAskedQuestions = find_all();
     include '../../App/views/FrequentlyAsked/index.php';
-    mysqli_close($conn);
+
 }
 
 function show()
 {
-        // Create connection
-    $conn = mysqli_connect("db", "root", "phprs", "myDB");
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    $sql = "SELECT * FROM FrequentlyAskeds WHERE id={$_GET['id']}";
-    $result = mysqli_query($conn, $sql);
+    $frequentlyAskedQuestion = find_by_id($_GET['id']);
     include '../../App/views/FrequentlyAsked/show.php';
-    mysqli_close($conn);
 }
