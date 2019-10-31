@@ -1,16 +1,22 @@
-php:
-  build: .
-  ports:
-   - "80:80"
-   - "443:443"
-  volumes:
-   - ./www:/var/www/html
-  links:
-   - db
-db:
-  image: mysql:5.7
-  volumes:
-   - /var/lib/mysql
-  environment:
-   - MYSQL_ROOT_PASSWORD=phprs
-   - MYSQL_DATABASE=phprs
+version: "2"
+services:
+  php:
+    build: .
+    ports:
+    - "80:80"
+    - "443:443"
+    volumes:
+    - ./www:/var/www/html
+    links:
+    - db
+  mysql_seeding:
+    build: ./mysql_seeding
+    depends_on:
+    - db
+  db:
+    image: mysql:5.7
+    volumes:
+    - /var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=phprs
+    - MYSQL_DATABASE=phprs
