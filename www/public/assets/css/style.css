@@ -7,9 +7,6 @@ html {
 }
 
 header {
-    /* position: fixed; */
-    /* top: 0; */
-    /* background-color: rgba(43, 116, 226, 0.911); */
     height: 60px;
     width: 100%;
     display: flex;
@@ -22,18 +19,13 @@ header {
 header h1, footer h1{
     padding-left: 16px;
     margin: 0px;
-    /* color: ;; */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     min-height: 200px;
     min-width: 100px;
-    /* background: #136ED0; */
-    /* background: rgb(176, 201, 228); */
 }
 
 .container {
@@ -50,9 +42,6 @@ body {
 }
 
 footer {
-    /* bottom: 0; */
-    /* position: fixed; */
-    /* background-color: rgb(243, 147, 2); */
     height: 60px;
     width: 100%;
     display: flex;
@@ -63,38 +52,32 @@ footer {
 }
 
 .social-media {
-  /* flex: 1; */
-  width: 200px;
-  display: flex;
-  background: center top url(../../../public/assets/images/social-media.png);
-  background-size: 100px;
-  text-indent: -9999px;
-  /* margin-right: 8px; */
-  /* background-repeat: no-repeat; */
-  opacity: 0.5;
-  margin-left: 16px;
+    width: 200px;
+    display: flex;
+    background: center top url(../../../public/assets/images/social-media.png);
+    background-size: 100px;
+    text-indent: -9999px;
+    opacity: 0.5;
+    margin-left: 16px;
 }
 
 .home {
-    /* flex: 1; */
     width: 24px;
     display: flex;
     background: center top url(../../../public/assets/images/home.png);
     background-size: 24px;
     text-indent: -9999px;
-    /* margin-right: 8px; */
-    /* background-repeat: no-repeat; */
     opacity: 0.5;
     margin-left: 16px;
 }
 
 .contact {
-  width: 200px;
-  margin-right: 16px;
+    width: 200px;
+    margin-right: 16px;
 }
 
 .social-media:hover {
-  filter: blur(1px);
+    filter: blur(1px);
 }
 
 form .fields{
@@ -105,7 +88,6 @@ form .fields{
 .btn {
     display: flex;
     height: 32px;
-    /* text-decoration: none; */
     background-color: cyan;
     margin: 4px;
     border:solid;
@@ -121,7 +103,6 @@ a {
 #suggestions {
     transition: 1s;
     -webkit-transition: 1s;
-    /* height: 200px; */
     overflow:hidden;
     padding-left: 16px;
 }
@@ -148,27 +129,19 @@ a {
 }
 
 .qea-background {
-      /* display: block; */
-    /* text-indent: -9999px; */
-    /* width: 32px; */
-    /* height: 32px; */
     background: center top url(../../public/assets/images/qea.png);
     background-size: 240px;
-    /* margin-right: 8px; */
-    /* background-repeat: no-repeat; */
     display: flex;
     flex: 1;
     opacity: 0.5;
 }
 
 .ticket-background {
-  flex: 1;
-  display: flex;
-  background: center top url(../../../public/assets/images/ticket.png);
-  background-size: 240px;
-  /* margin-right: 8px; */
-  /* background-repeat: no-repeat; */
-  opacity: 0.5;
+    flex: 1;
+    display: flex;
+    background: center top url(../../../public/assets/images/ticket.png);
+    background-size: 240px;
+    opacity: 0.5;
 }
 
 .ticket {
@@ -177,8 +150,8 @@ a {
 }
 
 .ticket-creation {
-  flex: 1;
-  max-width: 700px;
+    flex: 1;
+    max-width: 700px;
 }
 
 a h1 {
@@ -197,78 +170,63 @@ a:hover {
 }
 
 .user-icon {
-  display: block;
-  text-indent: -9999px;
-  width: 32px;
-  height: 32px;
-  background: url(../../../public/assets/images/user.svg);
-  background-size: 32px 32px;
-  margin-right: 8px;
+    display: block;
+    text-indent: -9999px;
+    width: 32px;
+    height: 32px;
+    background: url(../../../public/assets/images/user.svg);
+    background-size: 32px 32px;
+    margin-right: 8px;
 }
 
 .user-icon:hover {
-  filter: blur(1px);
+    filter: blur(1px);
 }
 
 .frequently-asked-questions {
-  width: 600px;
-  text-align: center;
-  padding-bottom: 32px;
+    width: 600px;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .frequently-asked-questions h1 {
-  margin-top: 32px;
-  margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .frequently-asked-questions a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 hr {
-  width: 700px;
-  border: 1px solid #0755A1;
+    width: 700px;
+    border: 1px solid #0755A1;
 }
 
 .single-report {
-  flex: 1;
-  max-width: 700px;
+    flex: 1;
+    max-width: 700px;
 }
 
 .single-report p, .single-report h3 {
-  padding-left: 16px;
+    padding-left: 16px;
 }
 
 input[type=submit] {
-  padding:5px 15px; 
-  background:white; 
-  border:0 none;
-  cursor:pointer;
-  /* -webkit-border-radius: 5px; */
-  /* border-radius: 5px;  */
+    padding:5px 15px; 
+    background:white; 
+    border:0 none;
+    cursor:pointer;
 }
 
 .successful-message {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
-
-
-
-
-
-
-
-
-/*
-=====
-LEVEL 1. RESET STYLES
-=====
-*/
 
 .field{
     --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
@@ -294,13 +252,7 @@ LEVEL 1. RESET STYLES
     color: var(--uiFieldPlaceholderColor);
     opacity: 1;
   }
-  
-  /*
-  =====
-  LEVEL 2. CORE STYLES
-  =====
-  */
-  
+
   .a-field{
     display: inline-block;
   }
@@ -314,15 +266,6 @@ LEVEL 1. RESET STYLES
   .a-field__input:focus{
     outline: none;
   }
-  
-  /*
-  =====
-  LEVEL 3. PRESENTATION STYLES
-  =====
-  */
-  
-  /* a-field */
-  
   .a-field{
     --uiFieldHeight: var(--fieldHeight, 40px);  
     --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
@@ -402,9 +345,7 @@ LEVEL 1. RESET STYLES
     opacity: 1;
     bottom: var(--uiFieldHeight);
   }
-  
-  /* a-field_a1 */
-  
+
   .a-field_a1 .a-field__input{
     transition: border-color .2s ease-out;
     will-change: border-color;
@@ -413,9 +354,7 @@ LEVEL 1. RESET STYLES
   .a-field_a1 .a-field__input:focus{
     border-color: var(--fieldBorderColorActive);
   }
-  
-  /* a-field_a2 */
-  
+
   .a-field_a2 .a-field__label-wrap::after{
     content: "";
     box-sizing: border-box;
@@ -434,9 +373,7 @@ LEVEL 1. RESET STYLES
   .a-field_a2 .a-field__input:focus ~ .a-field__label-wrap::after{
     width: 100%;
   }
-  
-  /* a-field_a3 */
-  
+
   .a-field_a3{
     padding-top: 1.5em;
   }
@@ -467,23 +404,9 @@ LEVEL 1. RESET STYLES
     bottom: calc(var(--uiFieldHeight) + .5em);
   }
   
-  /*
-  =====
-  LEVEL 4. SETTINGS
-  =====
-  */
-  
   .field{
     --fieldBorderColor: rgb(95, 167, 243);
     --fieldBorderColorActive: #0755A1;
   }
-
-
-
-
-
-
-
-
 
 </style>
