@@ -13,7 +13,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT id, title FROM Reports";
+$sql = "SELECT id, title FROM FrequentlyAskeds";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -94,11 +94,11 @@ if ($q !== "") {
     if (stristr($q, substr($name, 0, $len))) {
       if ($hint === "") {
         // $hint = "é uma resposta {$name}";
-        $hint = "<a href='/show.php?id={$id}'>{$name}</a>";
+        $hint = "<a href='FrequentlyAsked.php?action=show&id={$id}'>{$name}</a>";
         
       } else {
         // $hint .= ", $name";
-        $hint .= ", <a href='/show.php?id={$id}'>{$name}</a>";
+        $hint .= ", <a href='FrequentlyAsked.php?action=show&id={$id}'>{$name}</a>";
       }
     }
   }

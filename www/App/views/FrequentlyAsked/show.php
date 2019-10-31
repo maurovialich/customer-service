@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         echo "<h3>".$row["title"]."</h3>";
         echo "<hr>";
-        echo "<p>".$row['additional_description']."</p>";
+        echo "<p>".$row['answer']."</p>";
     }
     echo "</div>";
 

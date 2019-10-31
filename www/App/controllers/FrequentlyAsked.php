@@ -21,7 +21,7 @@ function index()
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT * FROM Reports";
+    $sql = "SELECT * FROM FrequentlyAskeds";
     $result = mysqli_query($conn, $sql);
 
     include '../../App/views/FrequentlyAsked/index.php';
@@ -37,7 +37,7 @@ function show()
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "SELECT * FROM Reports WHERE id={$_GET['id']}";
+    $sql = "SELECT * FROM FrequentlyAskeds WHERE id={$_GET['id']}";
     $result = mysqli_query($conn, $sql);
     include '../../App/views/FrequentlyAsked/show.php';
     mysqli_close($conn);
