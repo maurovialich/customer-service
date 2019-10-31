@@ -7,13 +7,9 @@
         </div>
 
         <form action="Report.php?action=create" method="post">
-            <!-- <p>título: <input type="text" name="title" onkeyup="showHint(this.value)"/></p>
-            <p>descrição: <input type="text" name="additional_description" /></p>
-            <p><input type="submit" /></p>
-    -->
             <div class="fields">
                 <label class="field a-field a-field_a2">
-                    <input name="title" class="field__input a-field__input" onkeyup="showHint(this.value)" placeholder="Ex. Problemas na entrega" required>
+                    <input name="title" class="field__input a-field__input" onkeyup="showHint(this.value)" placeholder="Dica: inicie com 'Como...' para testar as sugestões" required>
                     <span class="a-field__label-wrap">
                     <span class="a-field__label">Assunto</span>
                     </span>
@@ -25,39 +21,9 @@
                     </span>
                 </label>
             </div>
-
-
-            <!-- <p>descrição: <input type="text" name="additional_description" /></p> -->
-            
             <div class=submit-btn>
                 <p><input type="submit" value='Enviar'/></p>
             </div>
-
-
-
-            <!-- <p><b>Start typing a name in the input field below:</b></p>
-            <form>
-            First name: <input type="text" onkeyup="showHint(this.value)">
-            </form> -->
-            
-
-
-    <!-- 
-
-            <label class="field a-field a-field_a3">
-                <input onkeyup="showHint(this.value)" class="field__input a-field__input" placeholder="e.g. melnik909@ya.ru" required>
-                <span class="a-field__label-wrap">
-                <span class="a-field__label">E-mail</span>
-                </span>
-            </label> -->
-
-
-
-
-
-
-
-
         </form>
     </div>
 
@@ -85,7 +51,7 @@
                 }
             }
             };
-            xmlhttp.open("GET", "../services/gethint.php?q=" + str, true);
+            xmlhttp.open("GET", "../services/GetSuggestions.php?text=" + str, true);
             xmlhttp.send();
         }
         }

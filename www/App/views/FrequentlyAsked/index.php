@@ -10,7 +10,6 @@ echo "<div class='container'>";
 echo "<div class='frequently-asked-questions'>";
 echo "<h1>Perguntas Frequentes</h1>";
 if (mysqli_num_rows($frequentlyAskedQuestions) > 0) {
-    // output data of each row
     echo "<ul class='list-group'>";
     while($row = mysqli_fetch_assoc($frequentlyAskedQuestions)) {
         echo "<li class='list-group-item'>"."<a href='FrequentlyAsked.php?action=show&id={$row["id"]}'>".$row["title"]."</a>"."</li>";
@@ -19,8 +18,6 @@ if (mysqli_num_rows($frequentlyAskedQuestions) > 0) {
 } else {
     echo "0 results";
 }
-
-// echo "<a href='/'>link text</a>";
 echo "</div>";
 echo "</div>";
 include "../../App/views/footer.php";

@@ -18,7 +18,6 @@ switch ($action)
 function create()
 {
   $title = $_POST["title"];
-  
   $additional_description = $_POST["additional_description"];
   if(insert($title, $additional_description))
   {

@@ -4,6 +4,7 @@ include "../models/FrequentlyAsked.php";
 
 $action = $_GET["action"];
 
+//Simulating controller actions
 switch ($action) 
 {
     case 'index':

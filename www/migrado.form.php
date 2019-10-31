@@ -85,7 +85,7 @@
                 }
             }
             };
-            xmlhttp.open("GET", "gethint.php?q=" + str, true);
+            xmlhttp.open("GET", "GetSuggestions.php?q=" + str, true);
             xmlhttp.send();
         }
         }
